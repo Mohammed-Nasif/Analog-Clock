@@ -6,9 +6,12 @@
 
 ### Instructions:
 
-    - This Website is responsive on almost all Screen Types, But still if you faced an Issue with the scale of the photos try to zoom out your screen to 80% (It's Recommended To Use The Website in one of this Zoom Levels 80% - 90% - 100%).
+    - This Website is responsive on almost all Screen Types, But still if you faced an Issue 
+      with the scale of the photos try to zoom out your screen to 80% 
+      (It's Recommended To Use The Website in one of this Zoom Levels 80% - 90% - 100%).
 
-    - If you want to run project locally please try to open the project with live server if it's available to load the style correctly.
+    - If you want to run project locally please try to open the project with live server 
+      if it's available to load the style correctly.
 
 For The Live Demo, click [here](https://mohammed-nasif.github.io/Real-Time-Analog-Clock/).
 ---
