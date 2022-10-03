@@ -1,8 +1,8 @@
 const hrsHand = Array.from(document.getElementsByClassName('hrs'));
 const minsHand = Array.from(document.getElementsByClassName('mins'));
 const secsHand = Array.from(document.getElementsByClassName('secs'));
-const secTick = new Audio('assets/sounds/clock-ticking.mp3');
-const hrNotify = new Audio('assets/sounds/hour-notify.mp3');
+const secTick = new Audio('../assets/sounds/clock-ticking.mp3');
+const hrNotify = new Audio('../assets/sounds/hour-notify.mp3');
 secTick.autoplay = false;
 
 // To Solve The Privacy Issue
@@ -41,7 +41,7 @@ function clockDisplay(regionIndex, timeDiff) {
 
 // Dark-Light Mode
 const toggleBtn = document.getElementById('toggleMode');
-const clickSound = new Audio('assets/sounds/clickAudio.mp3');
+const clickSound = new Audio('../assets/sounds/clickAudio.mp3');
 toggleBtn.onclick = () => {
 	// Get The Current Active Color
 	clickSound.play();
