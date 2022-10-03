@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+* {
+	box-sizing: border-box;
+}
+:root {
+	--clock-clr: white;
+	--clock-url: url('../assets/imgs/clock_dark.png');
+}
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #282828;
+	font-family: 'Oswald', sans-serif;
+}
+#toggleMode {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: #3a7df0;
+	color: whitesmoke;
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	border-style: none;
+}
+#toggleMode:hover {
+	background-color: #3b6abc;
+}
+#clockWrapper {
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+.clockRegion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+/*Clock MainBody and Frame*/
+.clockBody {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 7px solid var(--clock-clr);
+	background-image: var(--clock-url);
+	box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+		inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+		inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+	background-color: var(--clock-clr);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Dark*/
+/* #clockBody {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 7px solid #282828;
+	background-image: url('../imgs/clock_light.png');
+	box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+		inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+		inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+	background-color: #282828;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+/*Hours Hand*/
+.hrs {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #232425;
+	position: relative;
+	left: 19.15px;
+	transform: rotate(0deg);
+}
+.hrs::before {
+	content: '';
+	background: inherit;
+	width: 8px;
+	height: 80px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 5px white;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -90%);
+}
+.hrs::after {
+	content: '';
+	background: #3a7df0;
+	width: 2px;
+	height: 20px;
+	border-radius: 30px;
+	position: absolute;
+	bottom: 416%;
+	left: 50%;
+	transform: translate(-50%);
+}
+/* Minutes Hand*/
+.mins {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #515151;
+	position: relative;
+	left: 4px;
+	transform: rotate(0deg);
+}
+.mins::before {
+	content: '';
+	background: inherit;
+	width: 5px;
+	height: 100px;
+	border-radius: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -90%);
+}
+/*Seconds Hand*/
+.secs {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ca3a3a;
+	position: relative;
+	right: 14px;
+	transform: rotate(0deg);
+}
+.secs::before {
+	content: '';
+	background: inherit;
+	width: 3px;
+	height: 120px;
+	border-radius: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -70%);
+}
